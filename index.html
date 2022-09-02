@@ -1,39 +1,320 @@
 
+<!DOCTYPE html>
 
-<HTML>
-<HEAD>
-   <TITLE>Esempio 1</TITLE>
-</HEAD>
+<html lang="it" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdn.cookie-script.com/s/cf64224d46f6d2608753ef156af5be40.js"></script>
+    <title>Sito HTML5 CSS3 esempio, sito responsive</title>
+    <meta content="Sito HTML5 CSS3 esempio, sito responsive ottimizzato mobile con media queries" name="description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
 
-<BODY BACKGROUND="titto_green_paper.jpg">
+<body>
 
-<CENTER><H1>Questo &egrave; scritto in stile Heading 1</H1></CENTER>
+    <div class="container-logo">
+        <a href="#top"></a>
+        <div class="row">
+            <div class="column-logo">
+                <a href="index.html"><img src="immagini/siti-html5-css3-robot.jpg" alt="agenzia marketing strategico" /></a>
+            </div>
 
-<FONT SIZE=+2>
+            <div class="column-menu">
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="active"><strong>Home</strong></a>
+                    <a href="#intro"><strong>Chi siamo</strong></a>
+                    <a href="#servizi"><strong>Servizi</strong></a>
+                    <a href="#new"><strong>Novità</strong></a>
+                    <a href="#contatti"><strong>Contatti</strong></a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
 
-Scritta non indentata
+    <header>
 
-<UL>      <!-- questo marcatore UL segna l'inizio
-               di una Unordered List, che non conterra'
-               nessun LI (List Item), l'effetto sara' 
-               quello di una semplice indentatura.   -->
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 class="slider">Sito HTML5 - CSS3 esempio</h1>
+                <h1 class="slider">Sito responsive con media queries</h1>
+            </div>
+        </div>
 
-  Scritta indentata seguita da un break<BR>
-  il break mi ha portato a riga nuova<P>
-  il paragrafo stacca di piu' (e permette di cambiare stile)
-</UL>     <!-- fine dell'indentatura -->
+        <h1 class="titolo-intro">Titolo H1, Titolo H1, Titolo H1</h1>
+    </header>
 
-<UL>      <!-- questa è una lista vera, invece -->
-  <LI>elemento uno</LI>
-  <LI>elemento due</LI>
-</UL>
 
-<CENTER>scritta centrata</CENTER>
+    <div id="container">
 
-</FONT>
-<HR WIDTH="100%">       <!-- una Hard Line che prendera' 
-                             il 100% della pagina -->
+        <div class="main">
+            <section id="intro">
+                <h2>Titolo H2</h2>
+                <article>
+                    <h2>Titolo H2, Titolo H2</h2>
 
-</BODY>
-</HTML>
+                    <p class="paragrafo-intro">
+                        « Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. »
+                    </p>
 
+                    <p class="paragrafo-intro">
+                        « Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+
+                    </p>
+                    <p class="paragrafo-intro">
+                        « Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. »
+                    </p>
+                    <p class="paragrafo-intro">
+                        « Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                    </p>
+                </article>
+            </section>
+
+            <section id="servizi">
+                <h3>Titolo H3</h3>
+                <article>
+                    <h3>Titolo H3</h3>
+                    <div class="row">
+                        <div class="column1">
+                            <h4 class="sotto-titolo">Titolo H4</h4>
+                            <p class="paragrafo-servizi">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="button2">SCOPRI DI PIU'</a>
+
+                        </div>
+                        <div class="column2">
+                            <h4 class="sotto-titolo">Titolo H4</h4>
+                            <p class="paragrafo-servizi">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="button2">SCOPRI DI PIU'</a>
+                        </div>
+                        <div class="column3">
+                            <h4 class="sotto-titolo">Titolo H4</h4>
+                            <p class="paragrafo-servizi">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="button2">SCOPRI DI PIU'</a>
+                        </div>
+                        <div class="columnok">
+                            <h4 class="sotto-titolo">Titolo H4</h4>
+                            <p class="paragrafo-servizi">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="button2">SCOPRI DI PIU'</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="vantaggi">
+                <div class="row">
+                    <div class="column-vantaggi">
+                        <a href="" target="_blank"><h4 class="sotto-titolo-risparmio">✓ Titolo H4</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+
+                        <a href="" target="_blank"><h4 class="sotto-titolo-risparmio">✓ Titolo H4</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+
+                    </div>
+                    <div class="column-vantaggi">
+                        <img src="immagini/robottino.jpg" class="list" alt="vantaggi consulenza marketing">
+
+                    </div>
+                    <div class="column-vantaggi">
+                        <a href="" target="_blank"><h4 class="sotto-titolo-risparmio">✓ Titolo H4</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+
+                        <a href="" target="_blank"><h4 class="sotto-titolo-risparmio">✓ Titolo H4</h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="new">
+            <div class="overlay">
+                <h3 class="titolo-news2">NOVITA'</h3>
+                <article>
+
+                    <div class="row">
+                        <div class="column4">
+
+                        </div>
+                        <div class="column5">
+                            <h3 class="titolo-news">Titolo H3</h3>
+                            <p class="paragrafo">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                                <a href="" class="button3">SCOPRI DI PIU'</a>
+                            <p class="paragrafo">
+
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="piano-strategico">
+            <h3 class="titolo-marketing">Titolo H3</h3>
+            <article>
+
+                <div class="row">
+                    <div class="column8">
+                        <h3>Titolo H3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                        </ol>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+                        </p>
+
+
+
+                    </div>
+
+                    <div class="column9">
+                        <img class="piano" alt="piano-di-marketing-strategico" src="immagini/robot-ok-s.png" />
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="piano-operativo">
+            <h3 class="titolo-marketing">Titolo H3</h3>
+            <article>
+
+                <div class="row">
+                    <div class="column8">
+                        <img class="piano" alt="piano-di-marketing-operativo" src="immagini/robot-orologio-t.png" />
+                    </div>
+
+                    <div class="column9">
+                        <h3>Titolo H3</h3>
+                        <p>Sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisci elit</li>
+                        </ol>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                        
+
+
+
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    <section id="contatti">
+        <h3>Contattaci come preferisci</h3>
+        <div class="contatti">
+            <a href="tel:+393382802359"><img src="immagini/Telefono.png" class="icone" alt="tel"></a> <a href="mailto:info@11marketing.it"><img src="immagini/Email.png" class="icone" alt="mail"></a> <a href="https://wa.me/+393382802359"><img src="immagini/Whatsapp.png" class="icone" alt="whatsapp"></a> <a href="https://www.linkedin.com/in/seospecialistdigitalmarketing"><img src="immagini/Linkedin.png" class="icone" alt="linkedin"></a>
+
+            <p id="up"><a href="#top"><strong>> TORNA SU</strong></a></p>
+        </div>
+
+    </section>
+    <footer>
+        <div class="row">
+            <div class="column-footer">
+                <h4 class="titolo-footer">ELEVEN MARKETING</h4>
+                ELEVEN MARKETING di Castellana Elio<br />
+                P IVA: 11691061003<br />
+                C. FISC. CSTLEI74S19H501K<br />
+                Mob: <a href="tel:+391231231234">1231231234</a><br />
+                Email: <a href="mailto:info@11marketing.it">info@11marketing.it</a><br />
+                <br><span><a href="https://agenzia-marketing.net/privacy-policy.html">Privacy Policy</a></span> |
+                <span><a href="https://agenzia-marketing.net/cookie-policy.html">Cooky Policy</a></span>
+            </div>
+
+            <div class="column-footer">
+                <h4 class="titolo-footer">Menù</h4>
+                <a href="#myTopnav" class="active">Home</a><br />
+                <a href="#intro">Chi siamo</a><br />
+                <a href="#servizi">Servizi</a><br />
+                <a href="#new">Novità</a><br />
+                <a href="#contatti">Contatti</a><br />
+            </div>
+
+            <div class="column-footer">
+                <h4 class="titolo-footer">Partner</h4>
+                <a href="https://11marketing.it/" target="_blank">ELEVEN MARKETING</a><br />
+                <a href="https://consulenzamarketingroma.it/" target="_blank">ELEVEN FORMAZIONE</a><br />
+                <a href="https://agenziadigitalmarketing.it/" target="_blank">AGENZIA DIGITAL ROMA EUR</a><br />
+                <a href="https://agenziawebostia.it/" target="_blank">AGENZIA WEB OSTIA</a><br />
+                <a href="https://corsiseoonline.it/" target="_blank">CORSI SEO ONLINE</a><br />
+            </div>
+
+            <div class="column-footer">
+                <h4 class="titolo-footer">Novità</h4>
+                Novità 1<br />
+                Novità 2<br />
+                Novità 3<br />
+                Novità 4<br />
+                Novità 5<br />
+
+            </div>
+        </div>
+    </footer>
+    <div id="footer-wrapper">
+
+        <div class="contatti">
+            <p class="small">&copy;Designed by <a href="https://11marketing.it">ELEVEN MARKETING</a></p>
+            
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valido!" /></a>
+            
+            &nbsp;
+
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fagenzia-marketing.net%2F">
+                <img style="border:0;width:88px;height:31px" src="immagini/W3C_HTML5_certified.png" alt="HTML Valido!" /></a>
+            
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
